@@ -1,6 +1,6 @@
 # Welcome to My Flutter Learning Journey
 
-![Flutter Logo](https://your-repo-url.com/flutter-logo.png)
+![Flutter Logo](assets/images/flutter_bg.png)
 
 ## 🚀 About This Repository
 
