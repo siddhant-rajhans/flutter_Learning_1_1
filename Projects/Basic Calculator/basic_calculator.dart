@@ -103,7 +103,7 @@ class CalMain extends State<MiniCal>{
           ,Text('Result', style: TextStyle(color: Colors.white, fontSize: 45, fontFamily: 'FontMain'),),
             Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text(Result, style: TextStyle(color: Colors.white, fontSize: 45, fontFamily: 'FontMain'),),
+              child: Text(Result, style: TextStyle(color: Colors.orange, fontSize: 45, fontFamily: 'FontMain'),),
             )
           ],
         ),
