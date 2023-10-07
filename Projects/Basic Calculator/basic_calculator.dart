@@ -76,35 +76,32 @@ class CalMain extends State<MiniCal>{
 
                   });
 
-                  }, child: const Text('Add')),
+                  }, child: const Text('Add +')),
                 ElevatedButton(onPressed: () {
                   var Value1 = int.parse(ValueHoldingController_1.text.toString());
                   var Value2 = int.parse(ValueHoldingController_2.text.toString());
                   var Subtraction =  Value1 - Value2;
                   Result = "The diff is: $Subtraction";
                   setState(() {});}
-                    , child: const Text('Sub')),
+                    , child: const Text('Sub -')),
                 ElevatedButton(onPressed: () {
                   var Value1 = int.parse(ValueHoldingController_1.text.toString());
                   var Value2 = int.parse(ValueHoldingController_2.text.toString());
                   var Multiply =  Value1 * Value2;
                   Result = "The multiply is: ${Multiply.toStringAsFixed(2)}";
                   setState(() {});}
-                , child: const Text('Mul')),
+                , child: const Text('Mul *')),
                 ElevatedButton(onPressed: () {
       var Value1 = int.parse(ValueHoldingController_1.text.toString());
       var Value2 = int.parse(ValueHoldingController_2.text.toString());
       var Divide =  Value1 / Value2;
       Result = "The div is: ${Divide.toStringAsPrecision(2)}";
       setState(() {});
-                }, child: const Text('Dev')),
+                }, child: const Text('Div /')),
               ],),
             )
           ,Text('Result', style: TextStyle(color: Colors.white, fontSize: 45, fontFamily: 'FontMain'),),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text(Result, style: TextStyle(color: Colors.orange, fontSize: 45, fontFamily: 'FontMain'),),
-            )
+            Text(Result, style: TextStyle(color: Colors.orange, fontSize: 45, fontFamily: 'FontMain'),)
           ],
         ),
       )),),
