@@ -3,7 +3,7 @@ import 'package:learn1_1/Splash%20Screen/splash.dart';
 
 
 main(){
-  runApp(MaterialApp(debugShowCheckedModeBanner: false,
+  runApp(const MaterialApp(debugShowCheckedModeBanner: false,
       home: SplashScreen()));
 }
 class HomeApp extends StatelessWidget {

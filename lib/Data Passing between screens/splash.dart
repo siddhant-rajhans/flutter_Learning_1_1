@@ -12,12 +12,15 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  //this override is initializing state, to set up starting action.
 
   @override
   void initState() {
     super.initState();
-
+    //Timer is a fuction to set an action for a duration
     Timer(const Duration(seconds: 2),(){
+      // Here we are using Navigator.pushReplacement for one time calling.
+      //pushReplacement will remove this from stack
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeApp() , ));
     } );
 
