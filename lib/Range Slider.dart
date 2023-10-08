@@ -16,6 +16,7 @@ class _RngeSliderState extends State<RngeSlider> {
   Widget build(BuildContext context) {
     RangeLabels labels = RangeLabels(values.start.toString(), values.end.toString());
     return MaterialApp(
+      title: 'Range Slider',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.amber,
